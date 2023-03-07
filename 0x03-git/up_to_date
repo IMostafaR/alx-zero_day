@@ -1,1 +1,59 @@
-touch up_to_date
+
+The git command line used
+
+git clone https://{My_Token}@github.com/IMostafaR/alx-pre_course.git\ncd alx-pre_course/
+echo 'My first readme' > README.md
+cat README.md
+git config --global user.email "{my_email}"
+git config --global user.name "Mostafa Ragab"
+git add .
+git commit -m 'My first commit'
+git push
+mkdir 0x01-git
+cd 0x01-git/
+echo '0x01-git readme' > README.md
+cat README.md
+cd..
+git add 0x01-git/
+git commit -m 'My second commit'
+git push
+cd 0x01-git/
+cd 0x01-git/
+mkdir bash c js
+cd c
+touch c_is_fun.c
+cd ..
+cd js
+touch main.js index.js
+cd ..
+cd bash/
+echo -e '#!/bin/bash\necho "ALX"' > alx
+echo -e '#!/bin/bash\necho "School"' > school
+cd ..
+git add . 
+git status
+git commit -m 'Starting to code today, so cool'
+git push
+git branch update_script
+git switch update_script
+cd bash/
+touch 98
+sed -i 's/echo "ALX"/echo "ALX School"/' alx
+cat alx
+sed -i 's/echo "School"/echo "The school is open!"/' school
+cat school
+git add .
+git commit -m 'My personal work'
+git push -u origin update_script
+git switch master
+cd ..\n
+rm -rf js
+git add .
+git commit -m 'Hot fix'
+git push
+git pull
+cd 0x01-git/
+echo -e 'ALL COMMANDS ABOVE' > up_to_date
+git add .
+git commit -m 'How to be up to date in git'
+git push
